@@ -1,0 +1,40 @@
+nav{
+    background-color: greenyellow;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav_li{
+    display: inline-block;
+    font-size: 36px;
+    padding: 15px;
+
+}
+
+p{
+  font-size: 20px;  
+}
+
+pcookies{
+    padding: 20px;
+    background: gray;
+}
+
+img{
+    float:left;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1{
+    font-size: 72;
+    text-align: center;
+}
+
+body{
+    background-image: url("/img/background.png"); 
+}
