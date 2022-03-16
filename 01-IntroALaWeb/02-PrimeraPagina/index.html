@@ -3,64 +3,91 @@
     <head>
         <meta chaset="UTF-8">
         <meta http-equiv="X-UA Compatible" content="IE=edge">
-        <meta name="viewport" content="width">
+        <meta name="viewport" content="width=device-width", initial-scale="1.6">
         <link rel="stylesheet" href="css/estilo.css"> 
         <title>El hogar virtual de Jesus Barraza</title>
         <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     </head>
     <style>
-        body {
-            background-image: url("/img/background.png"); 
+        body, html {
+          height: 100%;
+          margin: 0;
         }
-    </style>
+        
+        .bg {
+          background-image: url('img/bg.jpg');
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          position: relative;
+          color: white;
+          font-family: "Courier New", Courier, monospace;
+          font-size: 25px;
+        }
+        </style>
     <body>
+        <div class="bg">
+            <div class="caja" >
 
-        <div class="caja" >
+                    <p class="pcookies">Para una mejor experiencia en el portal, por favor acepta las cookies.                 <button type="button" class="toggle-btn">Aceptar</button>
+                        <button>Cancelar</button></p>
 
-                <p class="pcookies">Para una mejor experiencia en el portal, por favor acepta las cookies.                 <button type="button" class="toggle-btn">Aceptar</button>
-                    <button>Cancelar</button></p>
+                    <script>
+                        $(document).ready(function() {
+                            // Display alert message after toggle paragraphs
+                            $(".toggle-btn").click(function() {
+                                $(".pcookies").toggle(2000, function() {
+                                    // Code to be executed
+                                    pass;
+                                });
+                            });
+                        });
+                    </script>
 
-                <script>
-                    $(document).ready(function() {
-                        // Display alert message after toggle paragraphs
-                        $(".toggle-btn").click(function() {
-                            $(".pcookies").toggle(2000, function() {
-                                // Code to be executed
-                                pass;
-                              });
-                          });
-                      });
-                  </script>
+            </div>
+            <header>
+                <nav>
+                    <table>
+                        <tr>
+                            <th><a href="#main">Inicio</a></th>
+                            <th><a href="#mascotas">Mascotas</a></th>
+                            <th><a href="#footer">Contacto</a></th>
+                        </tr>
+                    </table>
+                </nav>
+            </header>
+            <main>
+                <h1>Bienvenido a mi portal en la web!</h1>
+                <img src="img/VRBINI.jpeg" style="float:left" title="Este es un avatar virtual, yo no me veo así realmente!">
+                <p>Es de mi gusto presentarles unas palabras sobre mi para que me conozcan mejor. 
+                    Soy Jesus Barraza, un ser humano que goza del arte, de crear y aprender cosas constantemente. 
+                    Estudié Ing. en Cibernética Electrónica y me gradué al inicio de la pandemia. 
+                    Hoy en día me quiero especializar en ser FullStack Developer o concentrame mas en 
+                    Front o Back end ya que esté mas avanzando en el curso. Mi frase favorita de un autor desconocido es:</p>
+                <p><blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat."</blockquote></p>
+                <p>Creo que reflexionar en esta frase me ha ayudado a darme cuenta de lo importante de la vida</p>
+                <p>Como cualquier adulto saludable, yo también disfruto de jugar videojuegos, pueden ver mi avatar en la foto de al lado. 
+                    Considero que tiene un gran parecido a su servidor y webmaster. Entre mis gustos se encuentra la música, imprimir en 3D, 
+                    Relidad Virtual, la electrónica, acampar y escalar, entre otros.
+                </p>
 
-        </div>
-        <header>
-            <nav>
+            </main>
+            <div class="mascotas">
                 <table>
                     <tr>
-                        <th><a href="#main">Inicio</a></th>
-                        <th><a href="#mascotas">Mascotas</a></th>
-                        <th><a href="#footer">Contacto</a></th>
+                        <th>Bean</th>
+                        <th>Martita</th>
+                        <th>Miniña</th>
+                    </tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Foto</td>
+                        <td>Foto</td>
                     </tr>
                 </table>
-            </nav>
-        </header>
-        <main>
-            <h1>Bienvenido a mi portal en la web!</h1>
-            <img src="img/VRBINI.jpeg" style="float:left" title="Este es un avatar virtual, yo no me veo así realmente!">
-            <p>Es de mi gusto presentarles unas palabras sobre mi para que me conozcan mejor. 
-                Soy Jesus Barraza, un ser humano que goza del arte, de crear y aprender cosas constantemente. 
-                Estudié Ing. en Cibernética Electrónica y me gradué al inicio de la pandemia. 
-                Hoy en día me quiero especializar en ser FullStack Developer o concentrame mas en 
-                Front o Back end ya que esté mas avanzando en el curso. Mi frase favorita de un autor desconocido es:</p>
-            <p><blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat."</blockquote></p>
-            <p>Creo que reflexionar en esta frase me ha ayudado a darme cuenta de lo importante de la vida</p>
-            <p>Como cualquier adulto saludable, yo también disfruto de jugar videojuegos, pueden ver mi avatar en la foto de al lado. 
-                Considero que tiene un gran parecido a su servidor y webmaster. Entre mis gustos se encuentra la música, imprimir en 3D, 
-                Relidad Virtual, la electrónica, acampar y escalar, entre otros.
-            </p>
-
-        </main>
+            </div>
+        </div>
     </body>
 </html>
