@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+}
+
+.tarjeta{
+    text-align: center;
+    width:100%;
+    height: 50%;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 3px 3px #000;
+}
+
+.info{
+    display: inline-block;
+    width: 300px;
+}

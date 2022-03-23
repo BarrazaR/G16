@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Playfair+Display&display=swap');
+body{
+    background-color: gray;
+}
+header{
+    background-color: aqua;
+}
+.blanco{
+    font-family: 'Hubballi';
+    font-size: 26px;
+}
+section{
+    background-color: #ffffff;
+    border:darkmagenta dashed 5px;
+    width: 60%;
+}
+section .colores{
+    border: #DDFA7A solid 10px;
+    border-color: #E69063;
+    border-right-color: #D4B4FA;
+    border-left-color: #60E6C2;
+    border-bottom-color: #FFF380;
+}
+p{
+    font-family: 'Playfair Display';
+}
