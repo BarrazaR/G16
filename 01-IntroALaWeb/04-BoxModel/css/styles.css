@@ -1,0 +1,36 @@
+body{
+    background-image: url(" ../img/bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+    margin:0px;
+    padding: 0px;
+}
+.principal, header{
+    background-color: #90BFD1;
+    width: 100px;
+}
+#piePagina{
+    background-color: #ADC2EB;
+    height: 100px;
+    width:20%;
+}
+.principal{
+    background-color: #9490D1;
+}
+.principal, #piePagina, header{
+    border: 1px black solid;
+    margin: 10px 5px 15px 20px;
+    padding: 20px 5px 10px 15px;
+}
+h1, p{
+    margin:50px;
+    padding: 10px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+#piePagina{
+    margin:auto;
+}
