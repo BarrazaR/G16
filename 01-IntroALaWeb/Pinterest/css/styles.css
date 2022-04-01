@@ -117,15 +117,21 @@ a:hover img{
     filter:brightness(65%);
     border-radius: 25px;
 }
+/* main div a a{
+    position: fixed;
+    top: 80px;
+    right: 8px;
+} */
 .board{
     columns: 6 252px;
     column-gap: 0;
     margin: 0 70px;
     text-align: center;
 }
-.guardar{
+/* .guardar{
     background-color: #E60023;
     color: white;
+    display: none;
     border-radius: 24px;
     padding: 16px;
     text-decoration: none;
@@ -133,14 +139,45 @@ a:hover img{
 }
 .guardar:hover{
     background-color: #ad081b;
-}
+
+} */
 .logo{
     height:100%;
     fill: #E60023 !important;
 }
 
+.floating_container{
+    position: fixed;
+    bottom: 80px;
+    right: 8px;
+}
+.floating_bubbles a{
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    color:black;
+    display: block;
+    font-size: 40px;
+    height: 48px;
+    justify-content: center;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 48px;
+}
+.floating_bubbles a:hover{
+    filter: brightness(95%);
+
+}
 @media only screen and (max-width:550px){
     header div div input{
         display:none;
     }
+
+}
+@media (min-width:550px) and (max-width:1900px){
+
+}
+@media (min-width:1901px){
+
 }
